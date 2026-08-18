@@ -25,7 +25,7 @@ function App() {
       console.log("Connecting to backend...");
 
       const response = await fetch(
-  "http://cloudfilestoragesystem-env.eba-sxdpx2fm.us-east-1.elasticbeanstalk.com/upload",
+    "https://d3fd00xlzffu2l.cloudfront.net/upload",
   {
     method: "POST",
     body: formData,
