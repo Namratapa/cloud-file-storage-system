@@ -11,7 +11,13 @@ const {
 
 const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://main.d2b1x5t2chww5c.amplifyapp.com",
+    methods: ["GET", "POST", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type"],
+  })
+);
 app.use(express.json());
 
 const upload = multer({
