@@ -25,7 +25,7 @@ function App() {
       console.log("Connecting to backend...");
 
       const response = await fetch(
-    "https://d3fd00xlzffu2l.cloudfront.net/upload",
+    "https://cloud-file-storage-system-1-pe4h.onrender.com/upload",
   {
     method: "POST",
     body: formData,
