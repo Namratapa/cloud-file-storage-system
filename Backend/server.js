@@ -1,5 +1,6 @@
 require("dotenv").config();
 
+
 const express = require("express");
 const cors = require("cors");
 const multer = require("multer");
@@ -13,7 +14,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://main.d2b1x5t2chww5c.amplifyapp.com",
+    origin: "https://cloud-file-storage-system-rose.vercel.app",
     methods: ["GET", "POST", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type"],
   })
